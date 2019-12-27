@@ -1,0 +1,47 @@
+git:
+    problems:
+        url: https://github.com/getgrav/grav-plugin-problems
+        path: user/plugins/problems
+        branch: master
+    error:
+        url: https://github.com/getgrav/grav-plugin-error
+        path: user/plugins/error
+        branch: master
+    markdown-notices:
+        url: https://github.com/getgrav/grav-plugin-markdown-notices
+        path: user/plugins/markdown-notices
+        branch: master
+    admin:
+        url: https://github.com/getgrav/grav-plugin-admin
+        path: user/plugins/admin
+        branch: master
+    login:
+        url: https://github.com/getgrav/grav-plugin-login
+        path: user/plugins/login
+        branch: master
+    form:
+        url: https://github.com/getgrav/grav-plugin-form
+        path: user/plugins/form
+        branch: master
+    email:
+        url: https://github.com/getgrav/grav-plugin-email
+        path: user/plugins/email
+        branch: master
+    breadcrumbs:
+        url: https://github.com/getgrav/grav-plugin-breadcrumbs
+        path: user/plugins/breadcrumbs
+        branch: master
+
+links:
+    problems:
+        src: grav-plugin-problems
+        path: user/plugins/problems
+        scm: github
+    error:
+        src: grav-plugin-error
+        path: user/plugins/error
+        scm: github
+    markdown-notices:
+        src: grav-plugin-markdown-notices
+        path: user/plugins/markdown-notices
+        scm: github

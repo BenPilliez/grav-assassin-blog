@@ -1,0 +1,52 @@
+# Composer
+.composer
+../grav-portfolio/vendor/autoload.php
+!*/vendor/*
+
+# Node
+node_modules
+yarn-error.log
+.npmrc
+
+# Sass
+.sass-cache
+
+# Grav Specific
+backup/*
+!backup/.*
+cache/*
+!cache/.*
+assets/*
+!assets/.*
+logs/*
+!logs/.*
+images/*
+!images/.*
+user/data/*
+!user/data/.*
+user/plugins/*
+!user/plugins/.*
+user/themes/quark/
+user/themes/blog-ac/
+!user/themes/.*
+user/localhost/config/security.yaml
+user/config/security.yaml
+
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp
+._*
+.Spotlight-V100
+.Trashes
+
+# phpstorm
+.idea/*
+user/config/security.yaml
+
+tests/_output/*
+tests/_support/_generated/*
+tests/cache/*
+tests/error.log
