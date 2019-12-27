@@ -27,7 +27,6 @@ user/data/*
 user/plugins/*
 !user/plugins/.*
 user/themes/quark/
-user/themes/blog-ac/
 !user/themes/.*
 user/localhost/config/security.yaml
 user/config/security.yaml
