@@ -1,0 +1,19 @@
+
+<nav class="navbar navbar-expand-lg  transparent  navbar-fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="menu">
+            <a class="navbar-brand " href="#">
+                <img src="{{ url("theme://images/logo.png") }}"  height="30px" width="30px" alt="">
+            </a>
+            <ul class="navbar-nav" id="nav">
+                {% for page in pages.children %}
+                    <li><a href="{% if not page.home %}/{% endif %}#{{ p.slug }}">{{ page.menu }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

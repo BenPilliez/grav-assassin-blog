@@ -1,0 +1,27 @@
+#header {
+
+  height: 948px;
+  min-height: 500px;
+  width: 100%;
+  background: #161415 url(../images/header.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  color: white !important;
+  #intro {
+    h1, p {
+      padding-top: 80px;
+    }
+  }
+
+  nav{
+    height: 80px;
+    img {
+      content: url(../images/logo.png)
+    }
+  }
+
+  li{
+    padding: 8px 13px;
+    text-decoration: none;
+  }
+}

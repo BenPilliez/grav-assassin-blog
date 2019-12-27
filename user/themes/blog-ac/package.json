@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "css": "npm-run-all --sequential css-compile css-minify",
+    "css-compile": "node-sass --include-path node_modules/bootstrap/scss --include-path node_modules/swiper/src --output-style expanded --precision 6 scss/template.scss css/template.css",
+    "css-minify": "node-sass --include-path node_modules/bootstrap/scss --include-path node_modules/swiper/src --output-style compressed --precision 6 scss/template.scss css/template.min.css",
+    "js": "npm-run-all --sequential js-build-fa js-concat js-clean-fa",
+    "js-build-fa": "etdfabuilder -o js/fa-build.js",
+    "js-clean-fa": "rimraf js/fa-build.js",
+    "js-concat": "concat -o js/template.js node_modules/popper.js/dist/umd/popper.min.js node_modules/bootstrap/js/dist/util.js node_modules/bootstrap/js/dist/tooltip.js node_modules/bootstrap/js/dist/button.js node_modules/bootstrap/js/dist/collapse.js js/fa-build.js node_modules/@fortawesome/fontawesome-free/js/fontawesome.js node_modules/featherlight/release/featherlight.min.js node_modules/swiper/dist/js/swiper.js js/custom.js",
+    "watch": "npm-run-all --parallel watch-css watch-js",
+    "watch-css": "nodemon --ignore js/ -e scss -x \"npm run css\"",
+    "watch-js": "nodemon --ignore scss/ --ignore js/fa-build.js --ignore js/template.js -e js -x \"npm run js\""
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@fortawesome/fontawesome-pro": "^5.9.0",
+    "autoprefixer": "^9.6.1",
+    "bootstrap": "~4.3.1",
+    "concat": "^1.0.3",
+    "dateformat": "^3.0.3",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "popper.js": "^1.15.0",
+    "rimraf": "^2.6.3"
+  }
+}

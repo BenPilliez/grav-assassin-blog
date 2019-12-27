@@ -1,0 +1,27 @@
+name: Blog Ac
+version: 0.1.0
+description: Blog sur assassin's creed
+icon: rebel
+author:
+  name: Pilliez Benjamin
+  email: benjamin.pilliez@sfr.fr
+homepage: https://github.com/pilliez-benjamin/grav-theme-blog-ac
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/pilliez-benjamin/grav-theme-blog-ac/issues
+readme: https://github.com/pilliez-benjamin/grav-theme-blog-ac/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool

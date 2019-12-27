@@ -1,0 +1,25 @@
+<!--Main Navigation-->
+<header id="header">
+
+    {% block navigation %}
+        {% include 'partials/navigation.html.twig' %}
+    {% endblock %}
+
+    <div class="container ">
+        <div class="row" id="intro">
+            <div class="col text-center">
+                <h1 class="h1 display-1">{{ site.header.title }}</h1>
+                <h3>{{ site.header.description }}</h3>
+                <hr/>
+                {% if site.social %}
+                    <ul class="list-inline">
+                        {% for item in site.social %}
+                            <li class="list-inline-item" id="item-social"><a href="{{ item.url }}"><i class="fa fa-{{ item.icon }}"></i></a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+</header>
