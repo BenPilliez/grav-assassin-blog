@@ -1,7 +1,17 @@
-title: Grav
+title: Portfolio pour tester GRAV
+default_lang: fr
 author:
-  name: Joe Bloggs
-  email: 'joe@example.com'
+  name: Benjamin Pilliez
+  email: benjamin.pilliez@sfr.fr
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+  description: "Création d'un blog avec le CMS GRAV"
+
+# Header customization
+header:
+  title: Assassin's Creed.
+  description: <p>Un petit blog sur les épisodes d'Assassin's Creed </a>.
+copyright:
+  - line:
+  - line:
+
 

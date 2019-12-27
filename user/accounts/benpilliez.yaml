@@ -1,0 +1,11 @@
+state: enabled
+email: benjamin.pilliez@sfr.fr
+fullname: 'Pilliez Benjamin'
+title: Administrator
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$nzLcgXT8ueNCNcNDheGyAu7YOvJa7LP/SCC/gNacM0swG44rEY2s.
