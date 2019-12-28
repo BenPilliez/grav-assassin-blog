@@ -3,9 +3,9 @@
   min-height: 500px;
   width: 100%;
   background: #161415 url(../images/header.jpg) no-repeat top center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  color: white !important;
+  background-size: cover;
+  -webkit-background-size: cover;
+  color: white;
 
   #intro {
     h1, p {
@@ -16,7 +16,7 @@
   nav {
     height: 80px;
     text-transform: uppercase;
-    font-family: Roboto,Helvetica,sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
 
     img {
       content: url(../images/logo.png)
@@ -24,7 +24,26 @@
 
     #nav {
       position: absolute;
-      right:10px;
+      right: 10px;
+    }
+
+    @media screen and (max-width: 900px) {
+
+      .navbar-brand {
+        display: none;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=FFFFFF');
+      }
+
+      #nav {
+        right: 45%;
+      }
+
+      ul > li > a  {
+        color: #FFFFFF;
+      }
     }
 
   }

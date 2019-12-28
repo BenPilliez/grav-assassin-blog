@@ -6347,9 +6347,9 @@ a.text-facebook:hover, a.text-facebook:focus {
   min-height: 500px;
   width: 100%;
   background: #161415 url(../images/header.jpg) no-repeat top center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  color: white !important;
+  background-size: cover;
+  -webkit-background-size: cover;
+  color: white;
 }
 
 #header #intro h1, #header #intro p {
@@ -6359,7 +6359,7 @@ a.text-facebook:hover, a.text-facebook:focus {
 #header nav {
   height: 80px;
   text-transform: uppercase;
-  font-family: Roboto,Helvetica,sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 #header nav img {
@@ -6369,6 +6369,21 @@ a.text-facebook:hover, a.text-facebook:focus {
 #header nav #nav {
   position: absolute;
   right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  #header nav .navbar-brand {
+    display: none;
+  }
+  #header nav .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=FFFFFF");
+  }
+  #header nav #nav {
+    right: 45%;
+  }
+  #header nav ul > li > a {
+    color: #FFFFFF;
+  }
 }
 
 #header li {
