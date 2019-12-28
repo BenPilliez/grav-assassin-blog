@@ -6358,9 +6358,27 @@ a.text-facebook:hover, a.text-facebook:focus {
 
 #header nav {
   height: 80px;
+  text-transform: uppercase;
+  font-family: Roboto,Helvetica,sans-serif;
+}
+
+#header nav img {
+  content: url(../images/logo.png);
+}
+
+#header nav #nav {
+  position: absolute;
+  right: 10px;
 }
 
 #header li {
   padding: 8px 13px;
+}
+
+#header li a {
+  text-decoration: none;
+}
+
+#header li a:hover {
   text-decoration: none;
 }
