@@ -1,6 +1,5 @@
-{% set collection = page.find('/home').collection %}
-{{ dump(page.collection[page.path]) }}
-{{ dump(page.find('/home').collection) }}
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
 <nav class="navbar navbar-expand-lg sticky-top transparent ">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
@@ -12,12 +11,15 @@
                 <img src="{{ url("theme://images/logo.png") }}" height="30px" width="30px" alt="">
             </a>
             <ul class="navbar-nav" id="nav">
-                {% for p in collection  %}
-                    <li><a href="{% if not page.home %}/{% endif %}#{{ p.slug }}">{{ p.menu }}</a></li>
+                {% for module in page.collection() %}
+                    {% if module.header.visible %}
+                        {% set current_page = (module.active or module.activeChild) ? 'current' : '' %}
+                        <li class="{{ current_module }}">
+                            <a class="smoothscroll" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
     </div>
 </nav>
-
-
