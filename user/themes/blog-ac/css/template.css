@@ -6342,6 +6342,62 @@ a.text-facebook:hover, a.text-facebook:focus {
   visibility: hidden !important;
 }
 
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Oswald-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Oswald-Light.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Oswald-Medium.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Oswald-Bold.ttf") format("TrueType");
+}
+
+div {
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 30px;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
 #header {
   height: 948px;
   min-height: 500px;
@@ -6396,4 +6452,12 @@ a.text-facebook:hover, a.text-facebook:focus {
 
 #header li a:hover {
   text-decoration: none;
+}
+
+#ubisoft hr {
+  width: 60%;
+}
+
+#ubisoft #introduction {
+  margin-top: 20px;
 }
