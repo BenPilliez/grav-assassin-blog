@@ -1,11 +1,43 @@
 #ubisoft {
+  display: block;
+  color: #fff;
+  width: 100%;
 
-  hr {
-    width: 60%
+  .background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
   }
 
   #introduction {
-    margin-top: 20px;
+    background-color: #4E72B8;
+    color: #ffffff;
+    padding-left: 60px;
+    padding-top: 60px;
+    text-align: left;
   }
 
+  #date {
+    background-color: #C59952;
+    color: #ffffff;
+    padding-left: 60px;
+    padding-top: 60px;
+    text-align: left;
+  }
+
+  .ubisoft {
+    padding-top: 80px;
+  }
+
+  #logo-ubisoft {
+    position: relative;
+    left: 25%;
+  }
+
+  .title-surrounded {
+    text-transform: uppercase;
+    color: #442C24;
+    background-color: #F5F5F5;
+  }
 }

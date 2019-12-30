@@ -1,11 +1,35 @@
-<section id="ubisoft">
-    <div class="container">
+{{ dump(page.media.images[ page.header.description.img ].cropResize(800, 800).url ) }}
+<section id="ubisoft" >
+    <div class="container-fluid" id="introduction">
         <div class="row">
-            <div class="col-12 text-center"><h2>{{ page.title }}</h2><hr></div>
-
-            <div class="col-lg-9" id="introduction">
-                {{ page.content }}
+            <div class="col-lg-5 col-md-5 col-sm-12 ubisoft">
+                <h3><span class="title-surrounded">{{ page.header.description.titre }}</span></h3>
+                <p>{{ page.header.description.text }}</p>
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 background" style="background-image: url({{ page.media.images[page.header.description.img].url }}); ">
         </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="date">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 background" style="background-image: url({{ page.media.images[page.header.description2.img].url }}); ">
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-12 ubisoft">
+
+                <h3><span class="title-surrounded">{{ page.header.description2.titre }}</span></h3>
+                <ul class="list-group list-group-flush" style="color: black;">
+                {% for test in page.header.description2.text %}
+                    <li class="list-group-item"> {{ test.titre }} : {{ test.text }} </li>
+                {% endfor %}
+                </ul>
+{#
+                <p>{{ page.header.description2.text }}</p>
+#}
+            </div>
+
+        </div>
+
     </div>
 </section>
