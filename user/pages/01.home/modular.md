@@ -1,8 +1,8 @@
 ---
 title: Accueil
 menu: Accueil
-
-onpage_menu: true
+visible: false
+onpage_menu: false
 content:
     items: @self.modular
 ---

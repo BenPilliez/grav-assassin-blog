@@ -1,5 +1,4 @@
 {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
-
 <nav class="navbar navbar-expand-lg sticky-top transparent ">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
@@ -7,17 +6,24 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu">
-            <a class="navbar-brand " href="#">
+            {{ dump(page.url) }}
+            <a class="navbar-brand " href="/">
                 <img src="{{ url("theme://images/logo.png") }}" height="30px" width="30px" alt="">
             </a>
             <ul class="navbar-nav" id="nav">
-                {% for module in page.collection() %}
-                    {% if module.header.visible %}
-                        {% set current_page = (module.active or module.activeChild) ? 'current' : '' %}
-                        <li class="{{ current_module }}">
-                            <a class="smoothscroll" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a>
-                        </li>
+                {% for page in pages.children %}
+                    {% if header.onpage_menu is same as(true) or page.visible is same as(true) %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ page.url }}">{{ page.menu }}</a>
+                </li>
                     {% endif %}
+                {% endfor %}
+
+                {% for module in page.collection() %}
+                        {% set current_page = (module.active or module.activeChild) ? 'current' : '' %}
+                        <li class="{{ current_module }} nav-item">
+                            <a class="nav-link" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a>
+                        </li>
                 {% endfor %}
             </ul>
         </div>

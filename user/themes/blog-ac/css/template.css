@@ -7041,3 +7041,16 @@ footer .copyright {
   text-transform: uppercase;
   color: #442C24;
 }
+
+article .title-carousel {
+  padding-top: 50px;
+}
+
+article .article {
+  margin-top: 50px;
+}
+
+article p {
+  line-height: 1.5em;
+  text-align: justify;
+}

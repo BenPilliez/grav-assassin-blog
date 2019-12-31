@@ -12,9 +12,7 @@
             <div class="col-lg-12">
                 <div id="carouselUbisoft" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        {{ dump(page.header) }}
                         {% for image in page.header.carousel.img %}
-                            {{ dump(image.title) }}
                             {% set active = loop.first ? "active" : "" %}
                             <div class="carousel-item {{ active }}">
                                 <img class="d-block w-100" src="{{ page.media.images[image.img].url }}"
@@ -79,7 +77,6 @@
         </div>
             <div class="row" >
                 {% for number in page.header.chiffre.items %}
-                    {{ dump(number) }}
                     <div class="col-md-6 col-lg-6" style="background-color: {{ number.color }}; color: {{ number.textColor }}">
                         <h3 class="text-center">{{ number.title }}</h3>
                         <p class="text-center">{{ number.number }}</p>

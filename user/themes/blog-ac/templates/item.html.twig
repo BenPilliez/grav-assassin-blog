@@ -1,0 +1,54 @@
+{% extends 'partials/base.html.twig' %}
+
+
+{% block header %}
+{% include 'partials/header.html.twig' %}
+{% endblock %}
+
+{% block content %}
+
+    <article>
+
+        <div class="container title-carousel">
+            <div class="row">
+                <div class="col-12">
+                    <h2>{{ page.header.title }}</h2>
+                </div>
+                <div class="col-lg-12" style="padding-top: 30px;">
+                    <div id="carouselUbisoft" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            {% for image in page.header.img.items %}
+                                {% set active = loop.first ? "active" : "" %}
+
+                                <div class="carousel-item {{ active }}">
+                                    <img class="d-block w-100" src="{{ page.media.images[image.media].url }}"
+                                         alt="First slide">
+                                    <div class="carousel-caption ">
+                                        <h3>{{ image.title }}</h3>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselUbisoft" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselUbisoft" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    {{ page.content }}
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}
