@@ -16,6 +16,8 @@
 
     {% block stylesheets %}
         {% do assets.addCss('theme://css/template.css'~compress) %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 100) %}
+
     {% endblock %}
 
     {% block javascripts %}
@@ -42,11 +44,7 @@
 {% endblock %}
 
 {% block footer %}
-    <div class="footer text-center">
-        <div class="wrapper padding">
-            <p>Créer par <a href="https://github.com/BenPilliez/">Pilliez Benjamin </a> </p>
-        </div>
-    </div>
+    {% include 'partials/footer.html.twig' %}
 {% endblock %}
 
 {% block bottom %}

@@ -6905,6 +6905,10 @@ h3 {
   font-size: 40px;
 }
 
+footer .copyright {
+  padding-top: 20px;
+}
+
 #header {
   height: 948px;
   min-height: 500px;

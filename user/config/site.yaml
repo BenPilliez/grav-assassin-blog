@@ -11,7 +11,12 @@ header:
   title: Assassin's Creed.
   description: <p>Un petit blog sur les épisodes d'Assassin's Creed </a>.
 copyright:
-  - line:
-  - line:
-
+  - line: © Copyright  Pilliez Benjamin
+social:
+  - url: "https://www.facebook.com/benjamin.pilliez?ref=bookmarks"
+    icon: facebook
+  - url: "https://www.linkedin.com/in/benjamin-pilliez-bb0624175/"
+    icon: linkedin
+  - url : "https://github.com/BenPilliez"
+    icon: github
 
