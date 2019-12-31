@@ -7,30 +7,41 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div id="carouselUbisoft" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                {% for image in page.media.images %}
-                    {% set active = loop.first ? "active" : "" %}
-                    <div class="carousel-item {{ active }}">
-                        <img class="d-block w-50" src="{{ image.url }}" alt="First slide">
+    <div class="container-fluid" style="background-color:#f0f3f4">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="carouselUbisoft" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        {{ dump(page.header) }}
+                        {% for image in page.header.carousel.img %}
+                            {{ dump(image.title) }}
+                            {% set active = loop.first ? "active" : "" %}
+                            <div class="carousel-item {{ active }}">
+                                <img class="d-block w-100" src="{{ page.media.images[image.img].url }}"
+                                     alt="First slide">
+                                <div class="carousel-caption ">
+                                    <h3>{{ image.title }}</h3>
+                                </div>
+                            </div>
+
+                        {% endfor %}
                     </div>
-                {% endfor %}
+                    <a class="carousel-control-prev" href="#carouselUbisoft" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselUbisoft" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselUbisoft" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselUbisoft" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
 
 
     <div class="container-fluid ubisoft-style"
-         style="background: linear-gradient(to bottom right, {{ page.header.description.color }} 30%, {{ page.header.description.color2 }} 30%)">
+         style="background: linear-gradient(to bottom right, {{ page.header.description.color }} 30%, {{ page.header.description.color2 }} 30%); margin-top: 20vh;">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 ubisoft">
                 <h3><span class="title-surrounded">{{ page.header.description.titre }}</span></h3>
@@ -38,28 +49,28 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 background"
                  style="background-image: url({{ page.media.images[page.header.description.img].url }}); ">
-                </div>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid ubisoft-style"
-             style="background: linear-gradient(to bottom right,{{ page.header.description.color2 }} 55%, {{ page.header.description.color }} 55%)">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 background"
-                     style="background-image: url({{ page.media.images[page.header.description2.img].url }}); ">
-                </div>
+    <div class="container-fluid ubisoft-style"
+         style="background: linear-gradient(to bottom right,{{ page.header.description.color2 }} 55%, {{ page.header.description.color }} 55%)">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 background"
+                 style="background-image: url({{ page.media.images[page.header.description2.img].url }}); ">
+            </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 ubisoft">
+            <div class="col-lg-6 col-md-6 col-sm-12 ubisoft">
 
-                    <h3><span class="title-surrounded">{{ page.header.description2.titre }}</span></h3>
-                    <ul class="list-group list-group-flush text" style="color: black;">
-                        {% for test in page.header.description2.text %}
+                <h3><span class="title-surrounded">{{ page.header.description2.titre }}</span></h3>
+                <ul class="list-group list-group-flush text" style="color: black;">
+                    {% for test in page.header.description2.text %}
                         <li class="list-group-item text-left"> {{ test.titre }} : {{ test.text }} </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
+                    {% endfor %}
+                </ul>
             </div>
 
         </div>
+
+    </div>
 </section>

@@ -6961,9 +6961,23 @@ h3 {
   text-decoration: none;
 }
 
-#ubisoft {
-  display: block;
+#ubisoft .carousel {
+  height: 600px;
+}
+
+#ubisoft .carousel-item,
+#ubisoft .carousel-inner {
+  height: 100%;
+  width: auto;
+}
+
+#ubisoft .carousel-inner img {
   width: 100%;
+  height: auto;
+}
+
+#ubisoft .carousel-item {
+  text-align: center;
 }
 
 #ubisoft .main-title {
