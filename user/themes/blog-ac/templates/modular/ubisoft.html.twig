@@ -64,13 +64,31 @@
 
                 <h3><span class="title-surrounded">{{ page.header.description2.titre }}</span></h3>
                 <ul class="list-group list-group-flush text" style="color: black;">
-                    {% for test in page.header.description2.text %}
-                        <li class="list-group-item text-left"> {{ test.titre }} : {{ test.text }} </li>
+                    {% for p in page.header.description2.text %}
+                        <li class="list-group-item text-left"> {{ p.titre }} : {{ p.text }} </li>
                     {% endfor %}
                 </ul>
             </div>
 
         </div>
+    </div>
 
+    <div class="container chiffre" >
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h2 class="text-center">{{ page.header.chiffre.titre }}</h2>
+            </div>
+        </div>
+            <div class="row" >
+                {% for number in page.header.chiffre.items %}
+                    {{ dump(number) }}
+                    <div class="col-md-6 col-lg-6" style="background-color: {{ number.color }}; color: {{ number.textColor }}">
+                        <h3 class="text-center">{{ number.title }}</h3>
+                        <p class="text-center">{{ number.number }}</p>
+                        <p class="text-center">{{ number.text }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>

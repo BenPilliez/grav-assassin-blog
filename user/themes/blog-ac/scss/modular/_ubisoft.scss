@@ -19,13 +19,20 @@
     text-align: center;
   }
 
-  .main-title{
+  .chiffre {
+    margin-top: 80px;
+    & > .row {
+      padding: 1em;
+    }
+  }
+
+  .main-title {
     padding-top: 30px;
   }
 
   .text {
     padding-top: 50px;
-    font-family: Raleway,Roboto, Helvetica, sans-serif;
+    font-family: Raleway, Roboto, Helvetica, sans-serif;
     font-weight: 200;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

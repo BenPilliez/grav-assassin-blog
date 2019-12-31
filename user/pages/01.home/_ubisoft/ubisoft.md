@@ -20,6 +20,19 @@ description2:
     img: ubisoft2.jpg
 carousel:
     img: [{"img":"rayman.jpg","title":"Rayman"},{"img":thecrew.jpg,"title":"The crew"},{"img":"tomclancys.jpg","title":"Tom Clancys"},{"img":"watchdogs.jpg","title":"Watch Dogs"}]
+chiffre:
+    titre: Quelques chiffres
+    items:
+    - title: Vente AC 2019
+      number: 140 millions
+      text: Rien que pour la franchise Assassin's creed
+      color: '#F5F5F5'
+      textColor: '#442C24'
+    - title: Chiffre d'affaire
+      number: 661,1 M €
+      text: ''
+      color: '#fff'
+      textColor: '#4E72B8'
 menu: ubisoft
 visible: true
 ---

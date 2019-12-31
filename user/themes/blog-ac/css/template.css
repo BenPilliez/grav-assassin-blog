@@ -6980,13 +6980,21 @@ h3 {
   text-align: center;
 }
 
+#ubisoft .chiffre {
+  margin-top: 80px;
+}
+
+#ubisoft .chiffre > .row {
+  padding: 1em;
+}
+
 #ubisoft .main-title {
   padding-top: 30px;
 }
 
 #ubisoft .text {
   padding-top: 50px;
-  font-family: Raleway,Roboto, Helvetica, sans-serif;
+  font-family: Raleway, Roboto, Helvetica, sans-serif;
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
