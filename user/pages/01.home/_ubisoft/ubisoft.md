@@ -18,6 +18,8 @@ description2:
     color2: '#7ACBE8'
     color3: '#7ACBE8'
     img: ubisoft2.jpg
+carousel:
+    img: [{"img":"rayman.jpg","title":"Rayman"},{"img":thecrew.jpg,"title":"The crew"},{"img":"tomclancys.jpg","title":"Tom Clancys"},{"img":"watchdogs.jpg","title":"Watch Dogs"}]
 menu: ubisoft
 visible: true
 ---
