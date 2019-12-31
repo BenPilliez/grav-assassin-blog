@@ -6905,6 +6905,10 @@ h3 {
   font-size: 40px;
 }
 
+footer {
+  background-color: #442C24;
+}
+
 footer .copyright {
   padding-top: 20px;
 }
@@ -6963,6 +6967,18 @@ footer .copyright {
 
 #header li a:hover {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  #ubisoft .dates {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #ubisoft .description {
+    padding-top: 100px;
+  }
 }
 
 #ubisoft .carousel {

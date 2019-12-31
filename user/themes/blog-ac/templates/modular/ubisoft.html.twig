@@ -40,9 +40,8 @@
     </div>
 
 
-    <div class="container-fluid ubisoft-style"
-         style="background: linear-gradient(to bottom right, {{ page.header.description.color }} 30%, {{ page.header.description.color2 }} 30%); margin-top: 20vh;">
-        <div class="row">
+    <div class="container-fluid ubisoft-style " style=" margin-top: 20vh">
+        <div class="row description" style="background-color : {{ page.header.description.color }}">
             <div class="col-lg-6 col-md-6 col-sm-12 ubisoft">
                 <h3><span class="title-surrounded">{{ page.header.description.titre }}</span></h3>
                 <p class="text">{{ page.header.description.text }}</p>
@@ -52,10 +51,9 @@
             </div>
         </div>
     </div>
-
-    <div class="container-fluid ubisoft-style"
-         style="background: linear-gradient(to bottom right,{{ page.header.description.color2 }} 55%, {{ page.header.description.color }} 55%)">
-        <div class="row">
+    {##}
+    <div class="container-fluid ubisoft-style ">
+        <div class="row dates" style="background-color :{{ page.header.description2.color }} ">
             <div class="col-lg-6 col-md-6 col-sm-12 background"
                  style="background-image: url({{ page.media.images[page.header.description2.img].url }}); ">
             </div>
