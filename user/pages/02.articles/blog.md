@@ -8,7 +8,7 @@ content:
     order:
         by: date
         dir: desc
-    limit: 2
+    limit: 6
     pagination: true
 
 pagination: true
