@@ -1,12 +1,13 @@
 ---
 title: Assassin's Creed Odysse
 subheading: Assassin's Creed Odysse
+summary: Le dernier de la série sorti en 2018, il a été récompensé pour son monde ouvert et ses graphismes impressionnant
 img: 
     items :
         - media : assassin_Ody.jpg
         - media : assassin_Ody_2.jpg
-        - media : assassin_Ody_3.jpg
-visible: true
+        - media : assassin_Ody_3.png
+visible: false
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false

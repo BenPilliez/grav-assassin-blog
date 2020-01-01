@@ -6,9 +6,9 @@ visible: true
 content:
     items: @self.children
     order:
-        by: date
+        by: header.date
         dir: desc
-    limit: 6
+    limit: 4
     pagination: true
 
 pagination: true

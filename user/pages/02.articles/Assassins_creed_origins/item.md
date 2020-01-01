@@ -1,12 +1,13 @@
 ---
 title: Assassin's Creed Origins
 subheading: Assassin's Creed Origins
+summary: L'avant dernier de la série sorti en 2017, ses graphismes impressionnant et détailler en font l'un des meilleurs de la série.  
 img: 
     items :
         - media : assassin_Origin.jpg
         - media : assassin_Origin_2.jpg
         - media : assassin_Origin_3.jpg
-visible: true
+visible: false
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false

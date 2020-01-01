@@ -6969,35 +6969,36 @@ footer .copyright {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-  #ubisoft .dates {
-    padding-bottom: 100px;
+@media screen and (max-width: 1925px) {
+  #ubisoft .carousel {
+    height: 600px;
+  }
+  #ubisoft .carousel-item,
+  #ubisoft .carousel-inner {
+    height: 100%;
+    width: auto;
+  }
+  #ubisoft .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  #ubisoft .carousel-item {
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 768px) {
-  #ubisoft .description {
-    padding-top: 100px;
+@media screen and (max-width: 1540px) {
+  #ubisoft .carousel {
+    display: none;
   }
 }
 
-#ubisoft .carousel {
-  height: 600px;
+#ubisoft .dates {
+  padding-bottom: 100px;
 }
 
-#ubisoft .carousel-item,
-#ubisoft .carousel-inner {
-  height: 100%;
-  width: auto;
-}
-
-#ubisoft .carousel-inner img {
-  width: 100%;
-  height: auto;
-}
-
-#ubisoft .carousel-item {
-  text-align: center;
+#ubisoft .description {
+  padding-top: 100px;
 }
 
 #ubisoft .chiffre {
@@ -7053,4 +7054,10 @@ article .article {
 article p {
   line-height: 1.5em;
   text-align: justify;
+}
+
+@media screen and (max-width: 992px) {
+  #articles .card {
+    margin-left: 20%;
+  }
 }

@@ -1,12 +1,13 @@
 ---
 title: Assassin's Creed 3
 subheading: Assassin's Creed 3
+summary: Troisième épisode de la série sorti en 2010, il fut l'un des meilleurs
 img: 
     items :
         - media : assassinIII.jpg
         - media : assassinIII_2.jpg
         - media : assassinIII_3.jpg
-visible: true
+visible: false
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false

@@ -1,12 +1,13 @@
 ---
 title: Assassin's Creed
-subheading: Assassin's Creed 
+subheading: Assassin's Creed
+summary:  Premier épisode de la série sorti en 2008
 img: 
     items :
         - media : assassin.jpg
         - media : assassinI.jpg
         - media : assassinIbis.jpg
-visible: true
+visible: false
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false

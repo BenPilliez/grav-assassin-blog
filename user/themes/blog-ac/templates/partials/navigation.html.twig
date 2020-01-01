@@ -6,7 +6,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu">
-            {{ dump(page.url) }}
             <a class="navbar-brand " href="/">
                 <img src="{{ url("theme://images/logo.png") }}" height="30px" width="30px" alt="">
             </a>
@@ -21,9 +20,11 @@
 
                 {% for module in page.collection() %}
                         {% set current_page = (module.active or module.activeChild) ? 'current' : '' %}
-                        <li class="{{ current_module }} nav-item">
+                    {% if module.header.visible is same as(true) %}
+                    <li class="{{ current_module }} nav-item">
                             <a class="nav-link" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a>
                         </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>

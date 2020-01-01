@@ -1,12 +1,13 @@
 ---
 title: Assassin's Creed BrotherHood
 subheading: Assassin's Creed BrotherHood
+summary: Il a été crée en 2013
 img: 
     items :
         - media : assassin_Bro.jpg
         - media : assassin_Bro_2.jpg
         - media : assassin_Bro_3.jpg
-visible: true
+visible: false
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false

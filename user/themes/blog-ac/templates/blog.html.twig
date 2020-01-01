@@ -3,24 +3,29 @@
 {% block content %}
     {% set collection = page.collection() %}
 
-    <div class="container">
+    <div class="container" id="articles">
         <div class="row">
             {% for post in collection %}
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="card" style="width: 18rem; margin-top: 20px">
                         <img src="{{ post.media.images | first.cropResize(400,300).url }}" class="card-img-top" alt="image top of card">
                         <div class="card-body">
-                            <h5 class="card-title">{{ post.header.subheading }}</h5>
-                            <p class="card-text post-preview">{{ post.summary }}</p>
+                            <h4 class="card-title text-center">{{ post.header.subheading }}</h4>
+                            <p class="card-text post-preview">{{ post.header.summary }}</p>
                             <a href="{{ post.url }}" class="btn btn-primary">Lire l'article</a>
                         </div>
                     </div>
                 </div>
             {% endfor %}
             <hr>
-            {% if config.plugins.pagination.enabled and collection.params.pagination %}
-                {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
-            {% endif %}
+            <div class="row" style="width:100%">
+                <div class="col-12">
+                {% if config.plugins.pagination.enabled and collection.params.pagination %}
+                    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+                {% endif %}
+                </div>
+            </div>
+
         </div>
     </div>
 {% endblock %}

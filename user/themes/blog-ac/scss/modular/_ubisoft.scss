@@ -1,37 +1,43 @@
 #ubisoft {
 
-  @media screen and (min-width: 768px) {
-    .dates {
-      padding-bottom: 100px;
+  @media screen and (max-width: 1925px){
+    .carousel {
+      height: 600px;
+    }
+
+    .carousel-item,
+    .carousel-inner {
+      height: 100%;
+      width: auto;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-item {
+      text-align: center;
     }
   }
-  @media screen and (min-width: 768px) {
-    .description {
-      padding-top: 100px;
+
+  @media screen and (max-width: 1540px){
+    .carousel {
+      display: none
     }
+
+  }
+  .dates {
+    padding-bottom: 100px;
   }
 
-  .carousel {
-    height: 600px;
-  }
-
-  .carousel-item,
-  .carousel-inner {
-    height: 100%;
-    width: auto;
-  }
-
-  .carousel-inner img {
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel-item {
-    text-align: center;
+  .description {
+    padding-top: 100px;
   }
 
   .chiffre {
     margin-top: 80px;
+
     & > .row {
       padding: 1em;
     }

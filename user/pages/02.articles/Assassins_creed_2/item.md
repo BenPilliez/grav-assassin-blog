@@ -1,12 +1,13 @@
 ---
 title: Assassin's Creed 2 
 subheading: Assassin's Creed 2 
+summary: Deuxième épisode de la série sorti en 2009
 img: 
     items :
         - media : assassin2.jpg
         - media : assassinII_2.jpg
         - media : assassinII_3.jpg
-visible: true
+visible: false
 twittercardoptions: summary
 articleenabled: false
 musiceventenabled: false
