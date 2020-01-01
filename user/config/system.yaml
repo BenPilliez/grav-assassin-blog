@@ -38,7 +38,7 @@ errors:
   log: true
 
 debugger:
-  enabled: true
+  enabled: false
   twig: true
   shutdown:
     close_connection: true
